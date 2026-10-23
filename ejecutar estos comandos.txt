@@ -1,0 +1,11 @@
+por si las moscas
+sed -i -e 's/\r$//' Tonoto.sh
+
+para iniciarlo
+bash Tonoto.sh
+
+para frenarlo
+pkill -f Tonoto.sh
+
+para evitar que se inicie junto a la pc(probar solo después de reiniciar la pc)
+rm ~/.config/autostart/zy.desktop
