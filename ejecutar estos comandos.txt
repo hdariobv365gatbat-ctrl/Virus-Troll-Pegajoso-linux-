@@ -1,11 +1,18 @@
-por si las moscas
+# ==============================================================================
+# Instrucciones de uso - Tonoto.sh
+# Autores: Darío (Gatbat) & Abigail 🖤🐾
+# ==============================================================================
+
+1. Por si las moscas (corrige los saltos de línea Windows CRLF y da permisos):
 sed -i -e 's/\r$//' Tonoto.sh
+chmod +x Tonoto.sh
 
-para iniciarlo
-bash Tonoto.sh
+2. Para iniciarlo:
+bash Tonoto.sh &
+# (o ./Tonoto.sh & para correrlo en segundo plano)
 
-para frenarlo
+3. Para frenarlo:
 pkill -f Tonoto.sh
 
-para evitar que se inicie junto a la pc(probar solo después de reiniciar la pc)
-rm ~/.config/autostart/zy.desktop
+4. Para evitar que se inicie junto a la PC (eliminar del autostart):
+rm -f ~/.config/autostart/zy.desktop
